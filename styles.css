@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color:black;
+}
+
+.diamond {
+    position: fixed;
+    top: 50px;
+    left: 10%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 2s ease;
+}
+
+.diamond-content {
+    transform: rotate(0deg);
+    color: white;
+    text-align: center;
+}
+
+.diamond-content img {
+    transform: rotate(0deg);
+    text-align: center;
+}
+.diamond p {
+    margin: 0;
+}
+
+@keyframes move-right {
+    from { left: 50%; }
+    to { right: 90%; }
+}
+
+@keyframes move-left-bottom {
+    from { left: 50%; }
+    to { right: 10%; top: 70vh; }
+}
+
+@keyframes move-right-bottom {
+    from { right: 10%; }
+    to { left: 90%; top: 50vh; }
+}
+
+@keyframes move-left {
+    from { left: 90%; top: 70vh; }
+    to { right: 10%; }
+}
+
